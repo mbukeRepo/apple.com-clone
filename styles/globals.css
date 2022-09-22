@@ -25,14 +25,10 @@
 
 /* iphone14-pro section */
 .iphone14-pro {
-  @apply bg-black  text-white;
-}
-
-.iphone14-pro__container {
-  @apply flex flex-col items-center py-16 relative overflow-hidden min-h-screen;
+  @apply flex flex-col items-center  relative;
 }
 .iphone14-pro__header {
-  @apply flex flex-col items-center gap-4 z-10 py-3;
+  @apply absolute top-28 text-white flex flex-col items-center gap-4 z-10 py-3;
 }
 .iphone14-pro__title {
   @apply text-4xl font-bold;
@@ -44,7 +40,7 @@
   @apply text-sm text-blue-700;
 }
 .iphone14-pro__image {
-  @apply absolute -top-3;
+  @apply h-full w-full;
 }
 
 .iphone14-pro__subtitle {
@@ -56,14 +52,11 @@
 }
 /* iphone-14 section */
 .iphone-14 {
-  @apply bg-slate-50;
-}
-.iphone-14__container {
-  @apply flex flex-col items-center py-16 relative overflow-hidden min-h-screen;
+  @apply flex flex-col items-center  relative h-auto;
 }
 
 .iphone-14__header {
-  @apply flex flex-col items-center gap-4 z-10 py-3;
+  @apply absolute top-24 flex flex-col items-center gap-4 z-10 py-3;
 }
 
 .iphone-14__title {
@@ -77,21 +70,18 @@
 }
 
 .iphone14__image {
-  @apply absolute top-6;
+  @apply h-full w-full;
 }
 /* watches */
 
 /* series 8 */
 
 .series-8 {
-  @apply bg-black;
-}
-.series-8__container {
-  @apply flex flex-col items-center py-16 relative overflow-hidden min-h-screen;
+  @apply flex flex-col items-center py-16 relative;
 }
 
 .series-8__header {
-  @apply flex flex-col items-center gap-4 z-10 py-3;
+  @apply absolute  top-36 flex flex-col items-center gap-4 z-10 py-3;
 }
 
 .series-8__title {
@@ -104,7 +94,7 @@
 }
 
 .series-8__image {
-  @apply absolute -top-2;
+  @apply h-full w-full;
 }
 
 /* new-products */
