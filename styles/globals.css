@@ -81,7 +81,7 @@
 }
 
 .series-8__header {
-  @apply absolute  top-36 flex flex-col items-center gap-4 z-10 py-3;
+  @apply absolute  top-48 flex flex-col items-center gap-4 z-10 py-3;
 }
 
 .series-8__title {
