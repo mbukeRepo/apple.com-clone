@@ -1,26 +1,128 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* main-nav section */
+.main-nav {
+  @apply bg-black bg-opacity-70  fixed top-0 left-0 w-full z-20 text-[10px];
+}
+.main-nav__container {
+  @apply container mx-auto flex items-center justify-center gap-8;
+}
+.main-nav__logo {
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.main-nav--backdrop {
+  backdrop-filter: 10px;
+}
+/* menu section */
+.menu {
+  @apply text-white flex items-center gap-4;
 }
 
-* {
-  box-sizing: border-box;
+/* iphone14-pro section */
+.iphone14-pro {
+  @apply bg-black  text-white;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.iphone14-pro__container {
+  @apply flex flex-col items-center py-16 relative overflow-hidden h-[600px];
+}
+.iphone14-pro__header {
+  @apply flex flex-col items-center gap-4 z-10 py-3;
+}
+.iphone14-pro__title {
+  @apply text-4xl font-bold;
+}
+.iphone14-pro__actions {
+  @apply flex gap-5;
+}
+.iphone14-pro__actions--sm {
+  @apply text-sm text-blue-700;
+}
+.iphone14-pro__image {
+  @apply absolute -top-4;
+}
+
+.iphone14-pro__subtitle {
+  @apply text-xl font-light;
+}
+
+.iphone14-pro__button {
+  @apply flex gap-1 items-center text-blue-500 hover:underline outline-none;
+}
+/* iphone-14 section */
+.iphone-14 {
+  @apply bg-slate-50;
+}
+.iphone-14__container {
+  @apply flex flex-col items-center py-16 relative overflow-hidden h-[600px];
+}
+
+.iphone-14__header {
+  @apply flex flex-col items-center gap-4 z-10 py-3;
+}
+
+.iphone-14__title {
+  @apply text-5xl font-semibold text-gray-900;
+}
+.iphone-14__subtitle {
+  @apply text-xl font-light;
+}
+.iphone-14__desc {
+  @apply text-gray-500;
+}
+
+.iphone14__image {
+  @apply absolute top-6;
+}
+/* watches */
+
+/* series 8 */
+
+.series-8 {
+  @apply bg-black;
+}
+.series-8__container {
+  @apply flex flex-col items-center py-16 relative overflow-hidden h-[600px];
+}
+
+.series-8__header {
+  @apply flex flex-col items-center gap-4 z-10 py-3;
+}
+
+.series-8__title {
+}
+.series-8__subtitle {
+  @apply text-xl font-light text-white;
+}
+.series-8__desc {
+  @apply text-gray-500;
+}
+
+.series-8__image {
+  @apply absolute top-6;
+}
+
+/* new-products */
+
+.new-products {
+  @apply min-h-screen bg-white grid grid-cols-2 p-2 gap-2;
+}
+
+.product {
+  @apply relative bg-slate-50 opacity-90 flex flex-col items-center py-12 overflow-hidden h-[480px];
+}
+.product__header {
+  @apply flex flex-col items-center z-10;
+}
+.product__title {
+  @apply h-10;
+}
+
+.product__header {
+  @apply flex flex-col items-center gap-3;
+}
+.product__image {
+  @apply absolute;
 }
