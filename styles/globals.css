@@ -4,7 +4,7 @@
 
 /* main-nav section */
 .main-nav {
-  @apply bg-black bg-opacity-70  fixed top-0 left-0 w-full z-20 text-[10px];
+  @apply bg-black bg-opacity-70  fixed top-0 left-0 w-full z-20 text-sm;
 }
 .main-nav__container {
   @apply container mx-auto flex items-center w-full space-x-8 justify-center;
@@ -28,7 +28,7 @@
   @apply flex flex-col items-center  relative;
 }
 .iphone14-pro__header {
-  @apply absolute top-28 text-white flex flex-col items-center gap-4 z-10 py-3;
+  @apply absolute top-36 text-white flex flex-col items-center gap-4 z-10 py-3;
 }
 .iphone14-pro__title {
   @apply text-4xl font-bold;
@@ -56,7 +56,7 @@
 }
 
 .iphone-14__header {
-  @apply absolute top-24 flex flex-col items-center gap-4 z-10 py-3;
+  @apply absolute top-36 flex flex-col items-center gap-4 z-10 py-3;
 }
 
 .iphone-14__title {
